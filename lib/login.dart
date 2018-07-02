@@ -27,6 +27,28 @@ class _LoginState extends State<LoginPage> {
           ),
           const SizedBox(
             height: 120.0,
+          ),
+          TextField(
+            decoration: InputDecoration(filled: true, labelText: 'Username'),
+          ),
+          SizedBox(
+            height: 12.0,
+          ),
+          TextField(
+            decoration: InputDecoration(filled: true, labelText: 'Password'),
+            obscureText: true,
+          ),
+          ButtonBar(
+            children: <Widget>[
+              FlatButton(
+                child: Text('CANCEl'),
+                onPressed: () {},
+              ),
+              RaisedButton(
+                child: Text('NEXT'),
+                onPressed: () {},
+              )
+            ],
           )
         ],
       )),
