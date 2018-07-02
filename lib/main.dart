@@ -1,5 +1,6 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/login.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,7 +10,7 @@ class MyApp extends StatelessWidget {
     print(key);
     return MaterialApp(
       title: "Welcome to Flutter",
-      home: RandomWords(),
+      home: LoginPage(),
       theme: new ThemeData(primaryColor: Colors.white),
     );
   }
